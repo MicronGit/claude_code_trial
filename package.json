@@ -1,0 +1,44 @@
+{
+  "name": "claude_code_trial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run typecheck && npm run lint && npm run format:check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicronGit/claude_code_trial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MicronGit/claude_code_trial/issues"
+  },
+  "homepage": "https://github.com/MicronGit/claude_code_trial#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.34.0",
+    "@typescript-eslint/parser": "^8.34.0",
+    "@vitest/ui": "^3.2.3",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.3"
+  }
+}
