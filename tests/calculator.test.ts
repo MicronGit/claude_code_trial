@@ -52,7 +52,9 @@ describe('Calculator', () => {
     });
 
     it('should throw error when dividing by zero', () => {
-      expect(() => calculator.divide(5, 0)).toThrow('Division by zero is not allowed');
+      expect(() => calculator.divide(5, 0)).toThrow(
+        'Division by zero is not allowed'
+      );
     });
   });
 
@@ -83,6 +85,8 @@ describe('factorial', () => {
   });
 
   it('should throw error for negative numbers', () => {
-    expect(() => factorial(-1)).toThrow('Factorial is not defined for negative numbers');
+    expect(() => factorial(-1)).toThrow(
+      'Factorial is not defined for negative numbers'
+    );
   });
 });
